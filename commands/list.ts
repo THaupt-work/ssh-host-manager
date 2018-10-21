@@ -2,6 +2,7 @@ import Helper from "../helper";
 import chalk from "chalk";
 import * as CliTable from "cli-table3";
 import Host from "../struct/Host";
+import {HorizontalTable} from "cli-table3";
 
 export default class List {
     static execute() {
@@ -12,7 +13,7 @@ export default class List {
         let table = new CliTable({
             head: ['Name', 'Host', 'Port', 'User', 'Identity File'],
             colWidths: [20, 20]
-        });
+        }) as HorizontalTable;
 
         config.forEach((row) => {
             table.push([row.name, row.hostname, row.port.toString(), row.user, row.identityfile]);

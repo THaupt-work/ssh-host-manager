@@ -1,6 +1,6 @@
 {
   "name": "ssh-host-manager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple CLI to manage your ssh shortcuts",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "@types/cli-table3": "^0.5.0",
+    "@types/cli-table": "^0.3.0",
     "@types/node": "^9.4.6"
   }
 }
